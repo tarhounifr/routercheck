@@ -1,23 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
+import{Nav,Navbar} from 'react-bootstrap';
 import "./Navbar.css"
-const Navbar = () => {
+const NavBar = () => {
     return (
 
-        <nav className="navbar">
-            <ul className="ulnavbar">
-                <Link to="/">
-                    <li>Home</li>
-                </Link>
-                <Link to="/MovieCard">
-                    <li>Movie</li>
-                </Link>
-                <Link to="/About"> <li>About</li></Link>
-
-            </ul>
-        </nav>
-
-    )
+  <Navbar bg="primary" variant="dark">
+    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Nav className="mr-auto">
+      <NavLink className="nav" to="/" >Home</NavLink>
+      <NavLink className="nav" to="/MovieCard">Movie</NavLink>
+      <NavLink className="nav" to="/About">About</NavLink>
+    </Nav>                
+  </Navbar>    
+    )           
 }
 
-export default Navbar
+export default NavBar

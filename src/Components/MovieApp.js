@@ -1,12 +1,13 @@
-import React from 'react'
-import MovieCards from './MovieCards'
+import React from 'react';
+import MovieCards from './MovieCards';
 import MovieListe from './MoviesData'
-
+;
+import './MovieApp.css';
 const MovieApp = () => {
 
 
     return (
-        <div>
+        <div className="affiche">
 
             {MovieListe.map(el => <MovieCards movies={el} key={el.id} />)}
         </div>

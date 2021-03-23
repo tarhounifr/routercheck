@@ -1,11 +1,5 @@
-.navbar{
-    display: flex;
-    align-items: center;
-}
-.ulnavbar{
-    display: flex;
-   flex-direction: row;
-    justify-content:space-around;
-   align-items: center;
-    list-style: none;
+.nav {
+  color: white;
+  list-style-type: none;
+  margin-left: 10%;
 }
